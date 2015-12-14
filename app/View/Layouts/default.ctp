@@ -23,7 +23,7 @@
       width: 400px;
     }
     .footer {
-      padding-top: 100px;
+      padding-top: 50px;
     }
   </style>
 
