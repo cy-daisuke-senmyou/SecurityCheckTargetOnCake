@@ -6,10 +6,11 @@
 class UsersController extends AppController {
   public $uses = array('User');
 
-  // 全てのactionの前に実行される。
+  // ログインフォーム表示
   public function index() {
   }
 
+  // ログイン試行
   public function submit() {
     $username = trim($this->request->data['username']);
     $password = trim($this->request->data['password']);
