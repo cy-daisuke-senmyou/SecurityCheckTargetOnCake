@@ -38,6 +38,7 @@
   Router::connect('/login',           array('[method]' => 'GET',  'controller' => 'users',    'action' => 'index'));
   Router::connect('/login/submit',    array('[method]' => 'POST', 'controller' => 'users',    'action' => 'submit'));
   Router::connect('/fileview',        array('[method]' => 'GET',  'controller' => 'fileview', 'action' => 'index'));
+  Router::connect('/bbs',             array('[method]' => 'GET',  'controller' => 'bbs',      'action' => 'index'));
 
 
 /**

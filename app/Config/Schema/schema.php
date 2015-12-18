@@ -5,6 +5,7 @@ class AppSchema extends CakeSchema {
     return true;
   }
 
+  // テーブル作成後に初期データ投入
   public function after($event = array()) {
     if (isset($event['create'])) {
       switch ($event['create']) {
@@ -32,4 +33,12 @@ class AppSchema extends CakeSchema {
     'modified'     => array('type' => 'datetime', 'null' => false, 'default' => null),
   );
 
+  // 掲示板
+  public $bbs = array(
+    'id'           => array('type' => 'integer',  'null' => false, 'default' => null, 'key' => 'primary', 'extra' => 'auto_increment'),
+    'name'         => array('type' => 'string',   'null' => false, 'default' => null, 'length' => 50),
+    'message'      => array('type' => 'text',     'null' => false, 'default' => null),
+    'created'      => array('type' => 'datetime', 'null' => false, 'default' => null),
+    'modified'     => array('type' => 'datetime', 'null' => false, 'default' => null),
+  );
 }
