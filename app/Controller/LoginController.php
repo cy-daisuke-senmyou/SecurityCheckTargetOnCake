@@ -3,7 +3,7 @@
 /**
  * ユーザー情報のController
  */
-class UsersController extends AppController {
+class LoginController extends AppController {
   public $uses = array('User');
 
   // ログインフォーム表示
