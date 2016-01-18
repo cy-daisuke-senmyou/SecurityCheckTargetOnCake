@@ -6,6 +6,12 @@
 class BbsController extends AppController {
   public $uses = array('Bbs');
 
+  public function beforeFilter() {
+    parent::beforeFilter();
+    // 全てのアクションを許可
+    $this->Auth->allow();
+  }
+
   // 掲示板投稿フォーム表示
   public function index() {
     $allPost = $this->Bbs->getAllPost();

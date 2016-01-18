@@ -6,6 +6,12 @@
 class LoginController extends AppController {
   public $uses = array('User');
 
+  public function beforeFilter() {
+    parent::beforeFilter();
+    // 全てのアクションを許可
+    $this->Auth->allow();
+  }
+
   // ログインフォーム表示
   public function index() {
   }

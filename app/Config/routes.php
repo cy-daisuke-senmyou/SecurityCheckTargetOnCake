@@ -35,10 +35,12 @@
    * Custom Setup
    */
   Router::connect('/',                array('[method]' => 'GET',  'controller' => 'index',    'action' => 'index'));
-  Router::connect('/login',           array('[method]' => 'GET',  'controller' => 'users',    'action' => 'index'));
-  Router::connect('/login/submit',    array('[method]' => 'POST', 'controller' => 'users',    'action' => 'submit'));
+  Router::connect('/login',           array('[method]' => 'GET',  'controller' => 'login',    'action' => 'index'));
+  Router::connect('/login/submit',    array('[method]' => 'POST', 'controller' => 'login',    'action' => 'submit'));
   Router::connect('/fileview',        array('[method]' => 'GET',  'controller' => 'fileview', 'action' => 'index'));
   Router::connect('/bbs',             array('[method]' => 'GET',  'controller' => 'bbs',      'action' => 'index'));
+  Router::connect('/passwdchange',    array('[method]' => 'GET',  'controller' => 'passwdchange', 'action' => 'index'));
+  Router::connect('/passwdchange/submit',    array(               'controller' => 'passwdchange', 'action' => 'submit'));
 
 
 /**
