@@ -4,4 +4,5 @@
 	<li><a href="/fileview/">OSコマンドインジェクション</a></li>
 	<li><a href="/bbs/">クロスサイトスクリプティング</a></li>
 	<li><a href="/passwdchange/">クロスサイトリクエストフォージェリ</a></li>
+	<li><a href="/autocrawl/">自動巡回テスト</a></li>
 </ul>
